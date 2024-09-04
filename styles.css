@@ -84,20 +84,35 @@ svg.small {
 
 .searchbar {
     display: grid;
-    grid-template-columns: 40px minmax(10%, 40%) 40px 50px 150px;
+    grid-template-columns: 60px minmax(10%, 40%) 40px 50px 150px;
 }
 
 .searchbar svg {
     width: 1.4rem;
+    margin-left: 20px;
 }
 
 #searchbar {
     background-color: var(--background-secondary);
     border: none;
     border-radius: 15px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: 40px;
+    height: 24px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#sushi {
+    background-image: url("images/sushi.jpg");
+    background-position: top 47.5% left 47.5%;
+    background-size: 180px auto;
 }
 
 .content {
