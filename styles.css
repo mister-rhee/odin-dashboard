@@ -71,25 +71,23 @@ svg.small {
 
 .main-sections svg,
 .misc-sections svg {
-    width: 1.4rem;
+    width: 20px;
 }
 
 .topbar {
-    display: grid;
-    grid-column: 2 / 3;
-    grid-template-columns: repeat(auto-fit, 1fr);
     background-color: var(--background-white);
-    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .searchbar {
-    display: grid;
-    grid-template-columns: 60px minmax(10%, 40%) 40px 50px 150px;
+    display: flex;
+    align-items: center;
 }
 
 .searchbar svg {
     width: 1.4rem;
-    margin-left: 20px;
 }
 
 #searchbar {
@@ -101,6 +99,10 @@ svg.small {
     padding-right: 15px;
     margin-right: 40px;
     height: 24px;
+}
+
+.navbar {
+    display: flex;
 }
 
 .profile {
@@ -115,6 +117,31 @@ svg.small {
     background-size: 180px auto;
 }
 
+.profile.big#sushi{
+    width: 60px;
+    height: 60px;
+    background-size: 270px auto;
+}
+
+div.navbar-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+}
+
+button.navbar-buttons {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-secondary);
+    width: 70px;
+    height: 26px;
+    border-radius: 15px;
+}
+
 .content {
     background-color: var(--background-secondary);
+}
+
+.card {
+    background-color: var(--background-white);
 }
