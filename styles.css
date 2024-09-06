@@ -27,7 +27,7 @@ svg.small {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 280px 1fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 170px 1fr;
 }
 
 .sidebar {
@@ -76,13 +76,30 @@ svg.small {
 
 .topbar {
     background-color: var(--background-white);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.searchbar .left,
+.searchbar .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.searchbar .left {
+    flex-grow: 1;
 }
 
 .searchbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -103,6 +120,14 @@ svg.small {
 
 .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .profile {
@@ -118,24 +143,25 @@ svg.small {
 }
 
 .profile.big#sushi{
-    width: 60px;
-    height: 60px;
-    background-size: 270px auto;
+    width: 80px;
+    height: 80px;
+    background-size: 360px auto;
 }
 
 div.navbar-buttons {
     display: flex;
     justify-content: right;
-    gap: 16px;
+    gap: 24px;
 }
 
 button.navbar-buttons {
     border: none;
     background-color: var(--primary-color);
     color: var(--text-secondary);
-    width: 70px;
-    height: 26px;
-    border-radius: 15px;
+    width: 90px;
+    height: 36px;
+    border-radius: 20px;
+    font-weight: 600;
 }
 
 .content {
