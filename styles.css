@@ -45,6 +45,9 @@ svg.small {
     flex-direction: column;
     gap: 3rem;
     padding: var(--margin-s);
+
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 0px 4px;
 }
 
 .sidebar .logo {
@@ -89,6 +92,9 @@ svg.small {
     display: flex;
     flex-direction: column;
     gap: var(--margin-l);
+
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 4px;
 }
 
 .searchbar .left,
@@ -209,6 +215,8 @@ button.navbar-buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 4px;
 }
 
 .card p {
@@ -236,6 +244,10 @@ button.navbar-buttons {
     display: flex;
     flex-direction: column;
     gap: var(--margin-s);
+}
+
+.announcements > div {
+    box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 4px;
 }
 
 .announcements div {
@@ -268,6 +280,7 @@ button.navbar-buttons {
     display: flex;
     flex-direction: column;
     gap: var(--margin-l);
+    box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 4px;
 }
 
 .trending-container .item {
